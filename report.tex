@@ -1,0 +1,24 @@
+\documentclass[letterpaper]{article} % Feel free to change this
+
+\begin{document}
+
+\title{ECE 350: Digital Systems Project Checkpoint 4}
+\author{Jonah Knapp} % Change this to your name
+\date{\today} % Change this to the date you are submitting
+\maketitle
+
+\section*{Duke Community Standard}
+
+By submitting this \LaTeX{} document, I affirm that
+\begin{enumerate}
+    \item I understand that each \texttt{git} commit I create in this repository is a submission
+    \item I affirm that each submission complies with the Duke Community Standard and the guidelines set forth for this assignment
+    \item I further acknowledge that any content not included in this commit under the version control system cannot be considered as a part of my submission.
+    \item Finally, I understand that a submission is considered submitted when it has been pushed to the server.
+\end{enumerate}
+
+Problems with Processor: 
+-MULT/DIV is never asserted to be ready. This causes an infinite stall every time either multiplication or division is carried out. I suspect this is due to error in transferring the MULTDIV module into the Processor module. However, I was not able to find the cause. 
+-Error with Branching. When a negative immediate is added to PC, the result is the immediate. I am not sure what the cause of this is, as the adder (in parallel with ALU) seems to be working as intended. 
+
+\end{document}
